@@ -34,22 +34,90 @@
 			<div class="card-header">
 				<h2>Cadastrar Carro</h2>
 			</div>
-			<div class="card-body" style="text-align: left">
+			<div class="card-body" style="direction: ltr; text-align: left">
 				<form action="?p=salvar" method="POST">
 					<input type="hidden" name="acao" value="novo-usuario">
 					<div class="form-group">
 						<label>Marca</label>
-						<input type="text" name="nome_usuario" class="form-control">
+                            <select name="tipo_servico" class="form-control" style="direction: ltr">
+                                <option>- Escolha a Marca do seu veículo -</option>
+                                <option value="Alfa Romeo">Alfa Romeo</option>
+                                <option value="Aston Martin">Aston Martin</option>
+                                <option value="Audi">Audi</option>
+
+                                <option value="Autovaz">Autovaz</option>
+                                <option value="Bentley">Bentley</option>
+                                <option value="Bmw">Bmw</option>
+                                <option value="Cadillac">Cadillac</option>
+
+                                <option value="Caterham">Caterham</option>
+                                <option value="Chevrolet">Chevrolet</option>
+                                <option value="Chrysler">Chrysler</option>
+                                <option value="Citroen">Citroen</option>
+
+                                <option value="Daihatsu">Daihatsu</option>
+                                <option value="Dodge">Dodge</option>
+                                <option value="Ferrari">Ferrari</option>
+                                <option value="Fiat">Fiat</option>
+
+                                <option value="Ford">Ford</option>
+                                <option value="Honda">Honda</option>
+                                <option value="Hummer">Hummer</option>
+                                <option value="Hyundai">Hyundai</option>
+
+                                <option value="Isuzu">Isuzu</option>
+                                <option value="Jaguar">Jaguar</option>
+                                <option value="Jeep">Jeep</option>
+                                <option value="Kia">Kia</option>
+
+                                <option value="Lamborghini">Lamborghini</option>
+                                <option value="Lancia">Lancia</option>
+                                <option value="Land Rover">Land Rover</option>
+                                <option value="Lexus">Lexus</option>
+
+                                <option value="Lotus">Lotus</option>
+                                <option value="Maserati">Maserati</option>
+                                <option value="Mazda">Mazda</option>
+                                <option value="Mercedes Benz">Mercedes Benz</option>
+
+                                <option value="MG">MG</option>
+                                <option value="Mini">Mini</option>
+                                <option value="Mitsubishi">Mitsubishi</option>
+                                <option value="Morgan">Morgan</option>
+
+                                <option value="Nissan">Nissan</option>
+                                <option value="Opel">Opel</option>
+                                <option value="Peugeot">Peugeot</option>
+                                <option value="Porsche">Porsche</option>
+
+                                <option value="Renault">Renault</option>
+                                <option value="Rolls Royce">Rolls Royce</option>
+                                <option value="Rover">Rover</option>
+                                <option value="Saab">Saab</option>
+
+                                <option value="Seat">Seat</option>
+                                <option value="Skoda">Skoda</option>
+                                <option value="Smart">Smart</option>
+                                <option value="Ssangyong">Ssangyong</option>
+
+                                <option value="Subaru">Subaru</option>
+                                <option value="Suzuki">Suzuki</option>
+                                <option value="Tata">Tata</option>
+                                <option value="Toyota">Toyota</option>
+
+                                <option value="Volkswagen">Volkswagen</option>
+                                <option value="Volvo">Volvo</option>
+                            </select>
 					</div>
 					<div class="form-group">
 						<label>Modelo</label>
-						<input type="email" name="email_usuario" class="form-control">
+						<input type="email" name="email_usuario" class="form-control" placeholder="Digite o modelo do carro">
 					</div>
 					<div class="form-group">
 						<label>Placa</label>
-						<input type="password" name="senha_usuario" class="form-control">
+						<input type="password" name="senha_usuario" class="form-control" placeholder="Digite a placa do carro">
 					</div>
-
+                    
 					<div class="form-group">
 						<button type="submit" class="btn btn-primary">Cadastrar</button>
 					</div>

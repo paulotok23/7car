@@ -27,35 +27,28 @@
                     </ul>
                 </div> <!-- /#sidebar-wrapper -->
                 <br><br>
-	<div class="row">
+	<div class="row" style="text-align: left; direction: ltr">
 	<div class="col-lg-8 offset-lg-2">
 		<div class="card">
 			<div class="card-header">
-				<h2>Novo Usuário</h2>
+				<h2>Cadastrar Carro</h2>
 			</div>
-			<div class="card-body" style="text-align: left">
-				<form action="?p=salvar" method="POST">
+			<div class="card-body">
+				<form action="cad-car.php" method="POST">
 					<input type="hidden" name="acao" value="novo-usuario">
 					<div class="form-group">
-						<label>Nome</label>
-						<input type="text" name="nome_usuario" class="form-control">
-					</div>
-					<div class="form-group">
-						<label>E-mail</label>
-						<input type="email" name="email_usuario" class="form-control">
-					</div>
-					<div class="form-group">
-						<label>Senha</label>
-						<input type="password" name="senha_usuario" class="form-control">
-					</div>
-					<div class="form-group">
-						<label>Nível de Acesso</label>
-						<select name="tipo_usuario" class="form-control">
-							<option>- Escolha -</option>
-							<option value="1">Administrador</option>
-							<option value="2">Usuário Comum</option>
-						</select>
-					</div>
+						<label>Marca</label>
+						<input type="text" name="marca" class="form-control" placeholder="Marca">
+					
+						<label>Modelo</label>
+						<input type="text" name="modelo" class="form-control" placeholder="Modelo">
+					
+						<label>Placa</label>
+						<input type="text" name="placa" class="form-control" placeholder="Placa">
+					
+                        <br>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>                    
 					<div class="form-group">
 						<button type="submit" class="btn btn-primary">Cadastrar</button>
 					</div>
@@ -64,3 +57,24 @@
 		</div>
 	</div>
 </div>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="js/jquery.min.js"></script>
+            <script src="js/bootstrap.bundle.min.js"></script> <!-- Menu Toggle Script -->
+            <script>
+              $(function(){
+                $("#menu-toggle").click(function(e) {
+                    e.preventDefault();
+                    $("#wrapper").toggleClass("toggled");
+                });
+
+                $(window).resize(function(e) {
+                  if($(window).width()<=768){
+                    $("#wrapper").removeClass("toggled");
+                  }else{
+                    $("#wrapper").addClass("toggled");
+                  }
+                });
+              });
+               
+            </script>

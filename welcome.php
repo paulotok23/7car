@@ -31,21 +31,14 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 <!-- Sidebar -->
                 <div id="sidebar-wrapper">
                     <ul class="sidebar-nav">
-                        <li class="sidebar-brand"> <a href="#"> 7CAR </a> </li>
+                        <li class="sidebar-brand"> 7CAR </a> </li>
                         <li> <a href="novo-carro.php">Cadastre seu Carro</a> </li>                        
                         <li> <a href="servicos.php">Agendar Serviços</a> </li>
                         <li> <a href="logout.php">Sair</a> </li>
                     </ul>
                 </div> <!-- /#sidebar-wrapper -->
                 <!-- Page Content -->
-                <div id="page-content-wrapper">
-                   <div class="row">
-                    <div class="col-lg-12">
-                        <div class="float-right">
-                            <a href="?p=novo" class="btn btn-primary"><i class="fas fa-plus"></i> Novo Ticket</a>
-                        </div>
-                    </div>
-                   </div>
+                <div id="page-content-wrapper">                   
                    <div class="row">
                     <div class="col-lg-4 my-5">
                         <div class="jumbotron">
